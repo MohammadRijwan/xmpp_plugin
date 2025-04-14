@@ -152,3 +152,7 @@
 ## 2.2.15
 
 * Updated ReadMe
+
+## 2.2.16
+
+* Fix Podspec
