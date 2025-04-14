@@ -1,7 +1,7 @@
-name: xmpp_plugin
+name: xmpp_plugin_fork
 description: Xmpp plugin which helps to connect with xmpp via native channels and native libs like smack android and ios via xmppframework
-version: 2.2.13
-homepage: https://github.com/vavadiyahiren/xmpp_plugin
+version: 2.2.14
+homepage: https://github.com/88888888oleg/xmpp_plugin_fork
 
 environment:
   sdk: '>=2.18.4 <4.0.0'

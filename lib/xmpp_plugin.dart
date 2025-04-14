@@ -2,11 +2,11 @@ import 'dart:async';
 import 'dart:developer';
 
 import 'package:flutter/services.dart';
-import 'package:xmpp_plugin/ennums/xmpp_connection_state.dart';
-import 'package:xmpp_plugin/error_response_event.dart';
-import 'package:xmpp_plugin/message_event.dart';
-import 'package:xmpp_plugin/models/message_model.dart';
-import 'package:xmpp_plugin/success_response_event.dart';
+import 'package:xmpp_plugin_fork/ennums/xmpp_connection_state.dart';
+import 'package:xmpp_plugin_fork/error_response_event.dart';
+import 'package:xmpp_plugin_fork/message_event.dart';
+import 'package:xmpp_plugin_fork/models/message_model.dart';
+import 'package:xmpp_plugin_fork/success_response_event.dart';
 
 import 'models/chat_state_model.dart';
 import 'models/connection_event.dart';

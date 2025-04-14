@@ -9,15 +9,15 @@ import 'package:flutter_xmpp_example/homepage.dart';
 import 'package:flutter_xmpp_example/native_log_helper.dart';
 import 'package:flutter_xmpp_example/utils.dart';
 import 'package:permission_handler/permission_handler.dart';
-import 'package:xmpp_plugin/custom_element.dart';
-import 'package:xmpp_plugin/ennums/xmpp_connection_state.dart';
-import 'package:xmpp_plugin/error_response_event.dart';
-import 'package:xmpp_plugin/models/chat_state_model.dart';
-import 'package:xmpp_plugin/models/connection_event.dart';
-import 'package:xmpp_plugin/models/message_model.dart';
-import 'package:xmpp_plugin/models/present_mode.dart';
-import 'package:xmpp_plugin/success_response_event.dart';
-import 'package:xmpp_plugin/xmpp_plugin.dart';
+import 'package:xmpp_plugin_fork/custom_element.dart';
+import 'package:xmpp_plugin_fork/ennums/xmpp_connection_state.dart';
+import 'package:xmpp_plugin_fork/error_response_event.dart';
+import 'package:xmpp_plugin_fork/models/chat_state_model.dart';
+import 'package:xmpp_plugin_fork/models/connection_event.dart';
+import 'package:xmpp_plugin_fork/models/message_model.dart';
+import 'package:xmpp_plugin_fork/models/present_mode.dart';
+import 'package:xmpp_plugin_fork/success_response_event.dart';
+import 'package:xmpp_plugin_fork/xmpp_plugin.dart';
 
 import 'mamExamples.dart';
 

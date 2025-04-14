@@ -1,4 +1,4 @@
-import 'package:xmpp_plugin/ennums/success_response_state.dart';
+import 'package:xmpp_plugin_fork/ennums/success_response_state.dart';
 
 class SuccessResponseEvent {
   SuccessResponseState? type;

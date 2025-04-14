@@ -144,3 +144,7 @@
 ## 2.2.13
 
 * Added Support for Android version 14
+
+## 2.2.14
+
+* Fix Android build issue

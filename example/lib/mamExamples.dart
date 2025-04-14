@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:xmpp_plugin/xmpp_plugin.dart';
+import 'package:xmpp_plugin_fork/xmpp_plugin.dart';
 
 import 'main.dart';
 
