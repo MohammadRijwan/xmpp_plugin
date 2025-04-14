@@ -1,0 +1,4 @@
+# .pubignore
+
+android/.idea/
+example/ios/Podfile.lock
