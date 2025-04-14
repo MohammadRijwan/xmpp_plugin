@@ -156,3 +156,7 @@
 ## 2.2.16
 
 * Fix Podspec
+
+## 2.2.17
+
+* Fix Podspec name
