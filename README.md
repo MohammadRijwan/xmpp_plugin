@@ -1,5 +1,8 @@
 # xmpp_plugin
-![status workflow](https://github.com/florisgravendeel/xmpp_plugin/actions/workflows/main.yml/badge.svg)
+
+⚠️ **Notice**: This is a **fork** of the original [xmpp_plugin](https://pub.dev/packages/xmpp_plugin) package.  
+This version contains **bug fixes** and stability improvements for custom project use.
+
 1. Connect to the xmpp server
 
 ```
@@ -225,5 +228,5 @@ void onConnectionEvents(ConnectionEvent connectionEvent) {
 
 Contact
 -------
- 
-You can reach us via mail(hiren@xrstudio.in) the if you have questions or need support.
+
+If you find any issues or want to suggest improvements, feel free to open an issue on GitHub.

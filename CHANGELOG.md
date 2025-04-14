@@ -148,3 +148,7 @@
 ## 2.2.14
 
 * Fix Android build issue
+
+## 2.2.15
+
+* Updated ReadMe
