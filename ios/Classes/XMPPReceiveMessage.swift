@@ -16,7 +16,7 @@ extension XMPPController {
         printLog("handling message \(String(describing: message))")
         if APP_DELEGATE.objEventData == nil {
             print("\(#function) | Nil data of APP_DELEGATE.objEventData")
-            // return
+            return
         }
         
         //TODO: Message - Singal
@@ -25,7 +25,7 @@ extension XMPPController {
         let vId : String = objMess.id.trim()
         if vId.count == 0 {
             print("\(#function) | Message Id nil")
-            return
+            // return
         }
         
         let customElement : String = message.getCustomElementInfo(withKey: eleCustom.Kay)
