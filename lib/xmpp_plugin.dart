@@ -28,6 +28,9 @@ abstract class DataChangeEvents {
   void onSuccessEvent(SuccessResponseEvent successResponseEvent);
 
   void onXmppError(ErrorResponseEvent errorResponseEvent);
+
+  //-- Denis
+  void onPresencesChange(Map<String, bool> presences);
 }
 
 class XmppConnection {
@@ -41,6 +44,8 @@ class XmppConnection {
   static late StreamSubscription connectionEventStream;
   static late StreamSubscription errorEventStream;
   static List<DataChangeEvents> dataChangelist = <DataChangeEvents>[];
+  //-- Denis
+  static Map<String, bool> presences = {};
 
   dynamic auth;
 
@@ -126,6 +131,21 @@ class XmppConnection {
       (dataEvent) {
         MessageEvent eventModel = MessageEvent.fromJson(dataEvent);
         MessageChat messageChat = MessageChat.fromJson(dataEvent);
+
+        //-- Denis
+        if (eventModel.type == 'presence') {
+          final jid = eventModel.from != null
+            ? eventModel.from!.split('@')[0] : '';
+          final status = eventModel.presenceType == 'available'
+            ? true : false;
+          if (jid.isNotEmpty) {
+            presences[jid] = status;
+            dataChangelist.forEach((element) {
+              element.onPresencesChange(presences);
+            });
+          }
+        }
+
         dataChangelist.forEach((element) {
           if (eventModel.msgtype == 'chat') {
             element.onChatMessage(messageChat);
